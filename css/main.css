@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2c2b2b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  perspective: 1500px; 
+
+}
+
+
+.cube{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 2s ease; 
+    margin-right: 5px;
+    margin-top: 240px;
+}
+
+.cube:hover{
+    transform: rotateX(180deg) rotateY(720deg);
+}
+
+.box{
+    position: absolute;
+    background-color: rgb(224, 223, 223);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.box-tube{
+    position: absolute;
+    background-color: rgb(224, 223, 223);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.box-tube{
+    position: absolute;
+    background-color: rgb(224, 223, 223);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.box.front{
+    transform: translate3d(0,0,100px);
+}
+
+.box.left{
+    transform: translate3d(-100px,0,0) rotateY(-90deg);
+}
+
+.box.back{
+    transform: translate3d(0,0,-100px) rotateX(180deg);
+}
+
+.box.right{
+    transform: translate3d(100px,0,0) rotateY(90deg);
+}
+
+.box.top{
+    transform: translate3d(0,-100px,0) rotateX(90deg);
+}
+
+.box.bottom{
+    transform: translate3d(0,100px,0) rotateX(-90deg);
+}
+
+.box.red{
+    background-color: #fe0000;
+}
+
+.back .bxl-youtube{
+    color: #f1f0f1;
+}
+
+.box.grey{
+    background-color: #ccc;
+    color: #6d6d6d;
+}
+
+.bx{
+    margin: 30% auto;
+    font-size: 85px; 
+}
+
+.bxl-youtube{
+    color: #fe0000;
+}
+
+.box.skyblue{
+    background-color: #0183bc;
+}
+
+.box.blue{
+    background-color: #3b599e;
+}
+
+.back .bxl-facebook{
+    color: #f1f0f1;
+}
+
+.back .bxl-twitter{
+    color: #f1f0f1;
+}
+
+
+
+
